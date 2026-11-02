@@ -1,0 +1,337 @@
+/* RESET & GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D6A4F;
+    padding: 20px 40px;
+    position: sticky;
+    top: 10px;
+    margin: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.menu a {
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #52B788;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: #52B788;
+    color: white;
+    padding: 80px 40px;
+    margin: 20px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    gap: 40px;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hello {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d8f3dc;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.button {
+    display: inline-block;
+    background-color: #2D6A4F;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    background-color: #1b4332;
+}
+
+.hero-image {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* SECTIONS BASE */
+.section {
+    padding: 80px 10%;
+}
+
+.section-alt {
+    background-color: #e8f5e9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2D6A4F;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #52B788;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ABOUT SECTION */
+.about-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    background-color: #52B788;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #d8f3dc;
+}
+
+.about-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* SKILL SECTION */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #2D6A4F;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border: 1px solid rgba(82, 183, 136, 0.2);
+    transition: all 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: #2D6A4F;
+    color: white;
+}
+
+/* PROJECT SECTION */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img-placeholder {
+    height: 150px;
+    background-color: #d8f3dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D6A4F;
+    font-weight: bold;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: #2D6A4F;
+    margin-bottom: 8px;
+}
+
+.project-info p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* PRESTASI SECTION */
+.prestasi-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.prestasi-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+    border-left: 6px solid #2D6A4F;
+    font-size: 1.05rem;
+}
+
+/* KONTAK SECTION */
+.kontak-section {
+    background-color: #2D6A4F;
+    color: white;
+    text-align: center;
+}
+
+.kontak-section .section-title {
+    color: white;
+}
+
+.kontak-section .section-title::after {
+    background-color: white;
+}
+
+.kontak-section p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.kontak-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kontak-btn {
+    background: white;
+    color: #2D6A4F;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.kontak-btn:hover {
+    background-color: #52B788;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE DESIGN (BIAR RAPI DI HP) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .hero-image {
+        width: 70%;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
